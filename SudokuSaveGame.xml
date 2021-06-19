@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Sudoku>
+    <SudokuGenerated>
+        <GeneratedRow>3,5,-,-,-,-,-,4,7</GeneratedRow>
+        <GeneratedRow>6,-,4,-,-,-,8,-,2</GeneratedRow>
+        <GeneratedRow>-,-,-,8,-,1,-,-,-</GeneratedRow>
+        <GeneratedRow>-,7,-,-,3,-,-,1,-</GeneratedRow>
+        <GeneratedRow>-,-,6,4,-,5,7,-,-</GeneratedRow>
+        <GeneratedRow>-,8,-,-,2,-,-,3,-</GeneratedRow>
+        <GeneratedRow>-,-,-,3,-,2,-,-,-</GeneratedRow>
+        <GeneratedRow>1,-,3,-,-,-,2,-,5</GeneratedRow>
+        <GeneratedRow>5,6,-,-,-,-,-,8,3</GeneratedRow>
+    </SudokuGenerated>
+    <SudokuPlayed>
+        <PlayedRow>3,5,-,-,-,-,-,4,7</PlayedRow>
+        <PlayedRow>6,-,4,-,-,-,8,-,2</PlayedRow>
+        <PlayedRow>-,-,-,8,-,1,-,-,-</PlayedRow>
+        <PlayedRow>-,7,-,-,3,-,-,1,-</PlayedRow>
+        <PlayedRow>-,-,6,4,-,5,7,-,-</PlayedRow>
+        <PlayedRow>-,8,-,-,2,-,-,3,-</PlayedRow>
+        <PlayedRow>-,-,-,3,-,2,-,-,-</PlayedRow>
+        <PlayedRow>1,-,3,-,-,-,2,-,5</PlayedRow>
+        <PlayedRow>5,6,-,-,-,-,-,8,3</PlayedRow>
+    </SudokuPlayed>
+    <SudokuSolution>
+        <SolutionRow>3,5,-,-,-,-,-,4,7</SolutionRow>
+        <SolutionRow>6,-,4,-,-,-,8,-,2</SolutionRow>
+        <SolutionRow>-,-,-,8,-,1,-,-,-</SolutionRow>
+        <SolutionRow>-,7,-,-,3,-,-,1,-</SolutionRow>
+        <SolutionRow>-,-,6,4,-,5,7,-,-</SolutionRow>
+        <SolutionRow>-,8,-,-,2,-,-,3,-</SolutionRow>
+        <SolutionRow>-,-,-,3,-,2,-,-,-</SolutionRow>
+        <SolutionRow>1,-,3,-,-,-,2,-,5</SolutionRow>
+        <SolutionRow>5,6,-,-,-,-,-,8,3</SolutionRow>
+    </SudokuSolution>
+    <TimePlayed>13:23:45</TimePlayed>
+    <GameMode>medium</GameMode>
+</Sudoku>

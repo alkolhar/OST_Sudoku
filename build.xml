@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Sudoku">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Eclips3/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="15"/>
+    <property name="source" value="15"/>
+    <path id="JUnit 5.libraryclasspath">
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.jupiter.api_5.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.jupiter.engine_5.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.jupiter.migrationsupport_5.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.jupiter.params_5.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.platform.commons_1.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.platform.engine_1.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.platform.launcher_1.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.platform.runner_1.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.platform.suite.api_1.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit.vintage.engine_5.7.1.v20210222-1948.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.opentest4j_1.2.0.v20190826-0900.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.apiguardian_1.1.0.v20190826-0900.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.junit_4.13.0.v20200204-1500.jar"/>
+        <pathelement location="C:/Users/mustafa/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+    </path>
+    <path id="Sudoku.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Sudoku.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Generator.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.RunAllTests.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.RunAllTests (1).classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SudokuGameTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SudokuSolverTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.jUnitTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.TimeoutTestJunit.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolverClass2.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SudokuClass.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.Tests.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.GameTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.AllTests.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolverClass.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolverClass2 (1).classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.ConsoleRunner.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolverTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SudokuTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.ModelGridTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.GoodTestSuite.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolutionTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolverTimeoutTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.AlteTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SudokuSingles.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SudokuSinglesTest.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.SolverClassManualTestOhneJUnit.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.JUnit5.classpath">
+        <path refid="Sudoku.classpath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="Programm/Sudoku/src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="res">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="Programm/Sudoku/src"/>
+            <src path="res"/>
+            <classpath refid="Sudoku.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Sudoku">
+        <java classname="start.Sudoku" failonerror="true" fork="yes">
+            <classpath refid="run.Sudoku.classpath"/>
+        </java>
+    </target>
+    <target name="Generator">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.Generator" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.Generator.classpath"/>
+        </junit>
+    </target>
+    <target name="RunAllTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.RunAllTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.RunAllTests.classpath"/>
+        </junit>
+    </target>
+    <target name="RunAllTests (1)">
+        <java classname="j2UnitTest.RunAllTests" failonerror="true" fork="yes">
+            <classpath refid="run.RunAllTests (1).classpath"/>
+        </java>
+    </target>
+    <target name="SudokuGameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.SudokuGameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SudokuGameTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SudokuSolverTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.SudokuSolverTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SudokuSolverTest.classpath"/>
+        </junit>
+    </target>
+    <target name="jUnitTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.AlteTest" todir="${junit.output.dir}"/>
+            <test name="jUnitTest.GoodTestSuite" todir="${junit.output.dir}"/>
+            <test name="jUnitTest.ModelGridTest" todir="${junit.output.dir}"/>
+            <test name="jUnitTest.SolutionTest" todir="${junit.output.dir}"/>
+            <test name="jUnitTest.SolverTest" todir="${junit.output.dir}"/>
+            <test name="jUnitTest.SolverTimeoutTest" todir="${junit.output.dir}"/>
+            <test name="jUnitTest.SudokuSinglesTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.jUnitTest.classpath"/>
+        </junit>
+    </target>
+    <target name="TimeoutTestJunit">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.TimeoutTestJunit" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.TimeoutTestJunit.classpath"/>
+        </junit>
+    </target>
+    <target name="SolverClass2">
+        <java classname="j2UnitTest.SolverClass2" failonerror="true" fork="yes">
+            <classpath refid="run.SolverClass2.classpath"/>
+        </java>
+    </target>
+    <target name="SudokuClass">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.SudokuClass" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SudokuClass.classpath"/>
+        </junit>
+    </target>
+    <target name="Tests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.Tests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.Tests.classpath"/>
+        </junit>
+    </target>
+    <target name="GameTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.GameTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.GameTest.classpath"/>
+        </junit>
+    </target>
+    <target name="AllTests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.AllTests" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.AllTests.classpath"/>
+        </junit>
+    </target>
+    <target name="SolverClass">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.SolverClass" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SolverClass.classpath"/>
+        </junit>
+    </target>
+    <target name="SolverClass2 (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="j2UnitTest.SolverClass2" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SolverClass2 (1).classpath"/>
+        </junit>
+    </target>
+    <target name="ConsoleRunner">
+        <java classname="jUnitTest.ConsoleRunner" failonerror="true" fork="yes">
+            <classpath refid="run.ConsoleRunner.classpath"/>
+        </java>
+    </target>
+    <target name="SolverTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.SolverTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SolverTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SudokuTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.SudokuTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SudokuTest.classpath"/>
+        </junit>
+    </target>
+    <target name="ModelGridTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.ModelGridTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.ModelGridTest.classpath"/>
+        </junit>
+    </target>
+    <target name="GoodTestSuite">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.GoodTestSuite" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.GoodTestSuite.classpath"/>
+        </junit>
+    </target>
+    <target name="SolutionTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.SolutionTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SolutionTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SolverTimeoutTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.SolverTimeoutTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SolverTimeoutTest.classpath"/>
+        </junit>
+    </target>
+    <target name="AlteTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.AlteTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.AlteTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SudokuSingles">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.SudokuSingles" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SudokuSingles.classpath"/>
+        </junit>
+    </target>
+    <target name="SudokuSinglesTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="jUnitTest.SudokuSinglesTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.SudokuSinglesTest.classpath"/>
+        </junit>
+    </target>
+    <target name="SolverClassManualTestOhneJUnit">
+        <java classname="jUnitTest.SolverClassManualTestOhneJUnit" failonerror="true" fork="yes">
+            <classpath refid="run.SolverClassManualTestOhneJUnit.classpath"/>
+        </java>
+    </target>
+    <target name="JUnit5">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.JUnit5.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
